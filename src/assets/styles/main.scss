@@ -1,0 +1,74 @@
+@import "variables";
+@import "animation";
+@import "nullstyle";
+@import "buttons.scss";
+@import "input.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: $font_main;
+  font-size: $size_m;
+  color: $black;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: $size_2xl;
+}
+
+h2 {
+  font-size: $size_xl;
+}
+
+h3 {
+  font-size: $size_l;
+}
+
+a {
+  text-decoration: none;
+  color: $light-black;
+  fill: currentColor;
+
+  &:hover {
+    color: $dark-blue;
+  }
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+hr {
+  display: flex;
+  width: 150%;
+  border-top: 1px solid $gray;
+}
+
+small {
+  font-size: 12px;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}

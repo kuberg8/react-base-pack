@@ -1,0 +1,91 @@
+.circular-loader {
+  -webkit-animation: rotate 2s linear infinite;
+  animation: rotate 2s linear infinite;
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  margin: auto;
+}
+
+.loader-path {
+  stroke-dasharray: 150, 200;
+  stroke-dashoffset: -10;
+  -webkit-animation: dash 1.2s ease-in-out infinite,
+    color 6s ease-in-out infinite;
+  animation: dash 1.2s ease-in-out infinite, color 6s ease-in-out infinite;
+  stroke-linecap: round;
+  stroke: white
+}
+
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -20;
+  }
+  100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -94;
+  }
+}
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -20;
+  }
+  100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -94;
+  }
+}
+// @-webkit-keyframes color {
+//   0% {
+//     stroke: #7d0e7f;
+//   }
+//   40% {
+//     stroke: #cf1285;
+//   }
+//   66% {
+//     stroke: #7d0e7f;
+//   }
+//   80%,
+//   90% {
+//     stroke: #cf1285;
+//   }
+// }
+
+// @keyframes color {
+//   0% {
+//     stroke: #7d0e7f;
+//   }
+//   40% {
+//     stroke: #cf1285;
+//   }
+//   66% {
+//     stroke: #7d0e7f;
+//   }
+//   80%,
+//   90% {
+//     stroke: #cf1285;
+//   }
+// }

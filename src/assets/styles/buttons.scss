@@ -1,0 +1,86 @@
+@import "variables";
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  outline: none;
+  border-radius: 4px;
+  font-size: $size_l;
+  transition: all 0.2s;
+  border: none;
+  background: none;
+  cursor: pointer;
+  fill: currentColor;
+
+  &:not(.loading):disabled {
+    filter: grayscale(100%);
+    opacity: 0.2;
+    color: black;
+    cursor: not-allowed;
+  }
+}
+
+.button__wraper {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 8px;
+}
+
+.btn-primary {
+  background: $dark-blue;
+  color: white;
+
+  &:not(:disabled) {
+    &:hover {
+      background: $blue;
+    }
+
+    &:active {
+    }
+  }
+}
+
+.btn-secondary {
+  background: $light-gray;
+  color: $light-black;
+
+  &:not(:disabled) {
+    &:hover {
+      background: $gray;
+    }
+
+    &:active {
+    }
+  }
+}
+
+.btn-success {
+  background: $green;
+  color: white;
+
+  &:not(:disabled) {
+    &:hover {
+      background: $light-green;
+    }
+
+    &:active {
+    }
+  }
+}
+
+.btn-outline-primary {
+  border: 1px solid currentColor;
+  color: $dark-blue;
+  background: none;
+
+  &:not(:disabled) {
+    &:hover {
+      color: $blue;
+    }
+
+    &:active {
+    }
+  }
+}

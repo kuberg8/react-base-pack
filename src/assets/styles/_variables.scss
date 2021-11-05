@@ -1,0 +1,35 @@
+/* Breakpoints */
+$lg-breakpoint: 961px;
+$md-breakpoint: 960px;
+$xs-breakpoint: 608px;
+
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+$font_main: "Roboto", sans-serif;
+$size_2xl: 24px;
+$size_xl: 20px;
+$size_l: 18px;
+$size_m: 16px;
+$size_s: 14px;
+$size_xs: 12px;
+$size_2xs: 10px;
+
+
+/* Colors */
+$dark-gray: rgba(0, 32, 51, 0.6);
+$gray: hsl(0, 0%, 50%);
+$light-gray: rgba(0, 66, 105, 0.07);
+
+$brand-blue: #0071B2;
+$dark-blue: #0078d2;
+$blue: #008efa;
+$blue-user: #2196F3;
+
+$black: #002033;
+$light-black: #2E5C78;
+
+$orange: #f38b01;
+$red: #ff4443;
+
+$light-green: #28D99E;
+$green: #24c38e;
